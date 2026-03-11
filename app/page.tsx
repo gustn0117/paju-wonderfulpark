@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -108,6 +108,8 @@ const unitPanels = [
 ];
 
 export default function Home() {
+  const [formStatus, setFormStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+
   useEffect(() => {
     document.body.classList.add('home-page');
     return () => {
@@ -288,9 +290,31 @@ export default function Home() {
           </div>
           <div className="form-card fade-in delay-1">
             <form
-              onSubmit={(e) => {
+              onSubmit={async (e) => {
                 e.preventDefault();
-                alert('제출되었습니다!');
+                setFormStatus('loading');
+                const form = e.currentTarget;
+                const formData = new FormData(form);
+                try {
+                  const res = await fetch('/api/reservations', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                      name: formData.get('name'),
+                      phone: formData.get('phone'),
+                      visit_date: formData.get('visit_date') || null,
+                      visit_time: formData.get('visit_time') || null,
+                    }),
+                  });
+                  if (res.ok) {
+                    setFormStatus('success');
+                    form.reset();
+                  } else {
+                    setFormStatus('error');
+                  }
+                } catch {
+                  setFormStatus('error');
+                }
               }}
             >
               <div className="form-grid">
@@ -298,6 +322,7 @@ export default function Home() {
                   <label className="form-label-text">이름 *</label>
                   <input
                     type="text"
+                    name="name"
                     className="form-input"
                     placeholder="이름을 입력해주세요"
                     required
@@ -307,6 +332,7 @@ export default function Home() {
                   <label className="form-label-text">전화번호 *</label>
                   <input
                     type="tel"
+                    name="phone"
                     className="form-input"
                     placeholder="010-1234-5678"
                     required
@@ -314,15 +340,21 @@ export default function Home() {
                 </div>
                 <div className="form-group">
                   <label className="form-label-text">방문 날짜 *</label>
-                  <input type="date" className="form-input" required />
+                  <input type="date" name="visit_date" className="form-input" required />
                 </div>
                 <div className="form-group">
                   <label className="form-label-text">방문 시간 *</label>
-                  <input type="time" className="form-input" required />
+                  <input type="time" name="visit_time" className="form-input" required />
                 </div>
               </div>
-              <button type="submit" className="form-submit">
-                방문예약 신청하기
+              {formStatus === 'success' && (
+                <div className="form-message success">예약이 접수되었습니다. 빠르게 연락드리겠습니다.</div>
+              )}
+              {formStatus === 'error' && (
+                <div className="form-message error">오류가 발생했습니다. 다시 시도해주세요.</div>
+              )}
+              <button type="submit" className="form-submit" disabled={formStatus === 'loading'}>
+                {formStatus === 'loading' ? '접수 중...' : '방문예약 신청하기'}
               </button>
             </form>
           </div>
