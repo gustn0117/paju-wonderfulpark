@@ -90,6 +90,19 @@ export default function BusinessPage() {
               <h2 className="section-heading">사업개요</h2>
               <p className="section-desc">파주 원더풀 파크의 핵심 사업 정보를 확인하세요.</p>
             </div>
+
+            {/* 조감도/투시도 이미지 */}
+            <div className="overview-hero-images fade-in">
+              <div className="overview-hero-card">
+                <img src="https://framerusercontent.com/images/Gqczx2zDWJSKOkqgAR1AzZDLhGA.png" alt="파주 원더풀파크 투시도" />
+                <div className="overview-hero-label">투시도</div>
+              </div>
+              <div className="overview-hero-card">
+                <img src="https://framerusercontent.com/images/w9nbaKPOVfUjeIDBW4xTz7o3Q.png" alt="파주 원더풀파크 광역조감도" />
+                <div className="overview-hero-label">광역조감도</div>
+              </div>
+            </div>
+
             <div className="overview-grid">
               <div className="data-card fade-in">
                 <div className="data-card-header">
@@ -102,7 +115,7 @@ export default function BusinessPage() {
                     <tr><th>규모</th><td>1,035세대</td></tr>
                     <tr><th>면적</th><td>610,808㎡ (185,000평)</td></tr>
                     <tr><th>사업비</th><td>1,753억원</td></tr>
-                    <tr><th>준공 예정</th><td>2026년 이후</td></tr>
+                    <tr><th>입주예정</th><td>2030년</td></tr>
                   </tbody>
                 </table>
               </div>
@@ -111,6 +124,68 @@ export default function BusinessPage() {
                 <p>파주 원더풀 파크는 경기도 파주시의 중심부에 위치한 대규모 단지입니다. 최신 건축 기술과 친환경 설계로 새로운 주거 문화를 제시합니다.</p>
                 <br />
                 <p><span className="highlight">캠프하우즈 도시개발사업</span> 안에서 완성되는 특별한 주거 프리미엄. 일반 조합이 아닙니다! 공공 도시개발사업의 신뢰 위에 세워지는 새로운 주택조합의 기준, 파주 원더풀파크.</p>
+              </div>
+            </div>
+
+            {/* 카탈로그 참조 핵심 가치 */}
+            <div className="catalog-highlights fade-in">
+              <div className="catalog-highlight-card">
+                <div className="catalog-highlight-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 256 256" fill="currentColor"><path d="M240,208H224V96a16,16,0,0,0-16-16H160a16,16,0,0,0-16,16v24H112V48a16,16,0,0,0-16-16H48A16,16,0,0,0,32,48V208H16a8,8,0,0,0,0,16H240a8,8,0,0,0,0-16ZM208,96V208H160V96ZM48,48H96V208H48Z"/></svg>
+                </div>
+                <h4>1,035세대 브랜드 대단지</h4>
+                <p>다양한 편의시설과 부대시설로 살기 좋은 대단지 아파트</p>
+              </div>
+              <div className="catalog-highlight-card">
+                <div className="catalog-highlight-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 256 256" fill="currentColor"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm-8-80V80a8,8,0,0,1,16,0v56a8,8,0,0,1-16,0Zm20,36a12,12,0,1,1-12-12A12,12,0,0,1,140,172Z"/></svg>
+                </div>
+                <h4>전세대 남향위주 단지배치</h4>
+                <p>일조량이 우수한 남향 배치로 쾌적한 단지환경 조성</p>
+              </div>
+              <div className="catalog-highlight-card">
+                <div className="catalog-highlight-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 256 256" fill="currentColor"><path d="M232,200a8,8,0,0,1-8,8H32a8,8,0,0,1,0-16h8V104A8,8,0,0,1,48,96h40a8,8,0,0,1,8,8v88h16V56a8,8,0,0,1,8-8h40a8,8,0,0,1,8,8V192h16V136a8,8,0,0,1,8-8h32a8,8,0,0,1,8,8v56h8A8,8,0,0,1,232,200Z"/></svg>
+                </div>
+                <h4>탁트인 힐링조망특권</h4>
+                <p>자연으로 열린 단지설계로 수변공원 삼릉 조망 가능</p>
+              </div>
+              <div className="catalog-highlight-card">
+                <div className="catalog-highlight-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 256 256" fill="currentColor"><path d="M224,48H32A16,16,0,0,0,16,64V192a16,16,0,0,0,16,16H224a16,16,0,0,0,16-16V64A16,16,0,0,0,224,48ZM32,64H224V80H32ZM224,192H32V96H224Z"/></svg>
+                </div>
+                <h4>공원형 단지설계</h4>
+                <p>단지 내 녹지공간과 단지 앞 수변공원이 연계된 친환경단지</p>
+              </div>
+            </div>
+
+            {/* 파주시 지정 도시개발사업 안내 */}
+            <div className="city-dev-section fade-in">
+              <div className="city-dev-header">
+                <h3>파주시 지정 도시개발사업</h3>
+                <p className="city-dev-subtitle">약 5,299세대 대단지 · 일산호수공원 약 1.5배 · 7개 테마월드로 완성되는 놀라운 도시</p>
+              </div>
+              <div className="city-dev-features">
+                <div className="city-dev-feature">
+                  <span className="city-dev-feature-label">Wonderful TRAFFIC</span>
+                  <h4>서울까지 빠른 길이 열리다</h4>
+                  <p>지하철 3호선 연장선 금천-조리선 신설역 추진<br/>서울-문산간 고속도로로 서울 20분대<br/>GTX파주 연장 예정</p>
+                </div>
+                <div className="city-dev-feature">
+                  <span className="city-dev-feature-label">Wonderful INFRA</span>
+                  <h4>문만 나서면 마트, 학교와 만나다</h4>
+                  <p>단지 옆 대형마트, 유럽형 중심상업지구 예정<br/>도보권 내에 유치원, 초등학교 신설 예정<br/>스타필드 고양, 파주 롯데 프리미엄 아울렛 인접</p>
+                </div>
+                <div className="city-dev-feature">
+                  <span className="city-dev-feature-label">Wonderful NATURE</span>
+                  <h4>대규모 공원이 우리집 앞마당이다</h4>
+                  <p>단지 바로 앞 축구장 약 58배 규모 수변공원 예정<br/>축구장 약 84배 규모의 테마파크를 내집처럼 이용<br/>파주 삼릉과 공릉천 조망 가능</p>
+                </div>
+                <div className="city-dev-feature">
+                  <span className="city-dev-feature-label">Wonderful VISION</span>
+                  <h4>다양한 개발호재로 가치가 자란다</h4>
+                  <p>파주 LG디스플레이단지 3배 규모 확장<br/>경기북부지역 최초 폴리텍 대학유치<br/>파주 통일로 일반산단, 법원2산단 배후수혜 단지</p>
+                </div>
               </div>
             </div>
           </div>
