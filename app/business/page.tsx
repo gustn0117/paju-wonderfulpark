@@ -56,7 +56,7 @@ export default function BusinessPage() {
         label="Business Overview"
         title="사업안내"
         subtitle="캠프하우즈 도시개발사업 첫 수혜단지, 파주 원더풀파크"
-        backgroundImage="https://framerusercontent.com/images/Gqczx2zDWJSKOkqgAR1AzZDLhGA.png"
+        backgroundImage="/images/tusido.jpg"
       />
 
       <div className="tab-nav-wrapper" ref={tabNavRef}>
@@ -94,11 +94,11 @@ export default function BusinessPage() {
             {/* 조감도/투시도 이미지 */}
             <div className="overview-hero-images fade-in">
               <div className="overview-hero-card">
-                <img src="https://framerusercontent.com/images/Gqczx2zDWJSKOkqgAR1AzZDLhGA.png" alt="파주 원더풀파크 투시도" />
+                <img src="/images/tusido.jpg" alt="파주 원더풀파크 투시도" />
                 <div className="overview-hero-label">투시도</div>
               </div>
               <div className="overview-hero-card">
-                <img src="https://framerusercontent.com/images/w9nbaKPOVfUjeIDBW4xTz7o3Q.png" alt="파주 원더풀파크 광역조감도" />
+                <img src="/images/gwangyeok.jpg" alt="파주 원더풀파크 광역조감도" />
                 <div className="overview-hero-label">광역조감도</div>
               </div>
             </div>
@@ -268,7 +268,7 @@ export default function BusinessPage() {
               <p className="section-desc">파주 원더풀 파크만의 특별한 8가지 프리미엄.</p>
             </div>
             <div className="premium-hero-image fade-in">
-              <img src="https://framerusercontent.com/images/Gqczx2zDWJSKOkqgAR1AzZDLhGA.png" alt="아파트 렌더링" />
+              <img src="/images/tusido.jpg" alt="아파트 렌더링" />
             </div>
             <div className="premium-list-card fade-in">
               <div className="premium-list-header">

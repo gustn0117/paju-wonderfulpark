@@ -26,8 +26,8 @@ const unitData = [
       { label: '계약면적', value: '108.60m²' },
     ],
     images: [
-      'https://framerusercontent.com/images/W8btjXqcpCqE8jO01dxBd3SuP8c.png',
-      'https://framerusercontent.com/images/xlF1ukGNLwnne7U9SdORdv6lBY.png',
+      '/images/59A_1.png',
+      '/images/59A_2.png',
     ],
   },
   {
@@ -48,8 +48,8 @@ const unitData = [
       { label: '계약면적', value: '107.96m²' },
     ],
     images: [
-      'https://framerusercontent.com/images/y2vXupDOlACJAAAjAPPBddYMQY.png',
-      'https://framerusercontent.com/images/khYkvO00bCq1ySEUuqlRHIrAImI.png',
+      '/images/59B_1.png',
+      '/images/59B_2.png',
     ],
   },
   {
@@ -70,8 +70,8 @@ const unitData = [
       { label: '계약면적', value: '140.10m²' },
     ],
     images: [
-      'https://framerusercontent.com/images/dwn2ORjYY028x3ZLmzJksksk0tU.png',
-      'https://framerusercontent.com/images/xFGY0kNeD6wEenOCrowE0lNdacw.png',
+      '/images/77A_1.png',
+      '/images/77A_2.png',
     ],
   },
   {
@@ -92,8 +92,8 @@ const unitData = [
       { label: '계약면적', value: '140.33m²' },
     ],
     images: [
-      'https://framerusercontent.com/images/MPZDfiLpARL1Wo7qsOcbGHitvE.png',
-      'https://framerusercontent.com/images/nyRJVSa6rFnWtez0NRnckxXMxB8.png',
+      '/images/77B_1.png',
+      '/images/77B_2.png',
     ],
   },
   {
@@ -114,7 +114,7 @@ const unitData = [
       { label: '계약면적', value: '198.44m²' },
     ],
     images: [
-      'https://framerusercontent.com/images/6tMrnmuIcwDETXAIkA8G9YBJss.png',
+      '/images/111A.png',
       'https://framerusercontent.com/images/lZAvPywGKfPyuzQfgSfBMWH4L4.png',
     ],
   },

@@ -86,7 +86,7 @@ export default function ComplexPage() {
         label="Complex Guide"
         title="단지 안내"
         subtitle={`" 캠프하우즈 도시개발사업 첫 수혜단지! 자연과 도시가 공존하는 5,299세대의 미니신도시 "`}
-        backgroundImage="https://framerusercontent.com/images/w9nbaKPOVfUjeIDBW4xTz7o3Q.png"
+        backgroundImage="/images/gwangyeok.jpg"
       />
 
       <div className="tab-nav-wrapper" ref={tabNavRef}>
@@ -115,12 +115,12 @@ export default function ComplexPage() {
               <p className="content-heading-sub">파주 원더풀파크의 단지 배치를 한눈에 확인하세요</p>
             </div>
             <div className="image-card fade-in-scale">
-              <img src="https://framerusercontent.com/images/IdNB37RHjpPHbUiY6szMeSgldnw.png" alt="단지배치도" />
+              <img src="/images/danji-layout.png" alt="단지배치도" />
             </div>
             <LegendCard />
             <div className="image-card fade-in-scale">
               <div className="image-card-caption">
-                <img src="https://framerusercontent.com/images/yilXPYXWPl2OfxqPiz40tULDE.png" alt="도시개발사업 계획도" />
+                <img src="/images/toji-plan.png" alt="도시개발사업 계획도" />
                 <div className="caption-overlay">
                   <span className="caption-badge">
                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 256 256" fill="currentColor"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm-4,48a12,12,0,1,1-12,12A12,12,0,0,1,124,72Zm12,112a16,16,0,0,1-16-16V128a8,8,0,0,1,0-16,16,16,0,0,1,16,16v40a8,8,0,0,1,0,16Z"/></svg>
