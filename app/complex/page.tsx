@@ -143,7 +143,7 @@ export default function ComplexPage() {
               <p className="content-heading-sub">동별 호수 배치를 상세하게 확인하세요</p>
             </div>
             <div className="image-card fade-in-scale">
-              <img src="https://framerusercontent.com/images/aYD4ehlww2bSdogTdjK1kQGq6Y.png" alt="동호수배치도" />
+              <img src="/images/danji-layout.png" alt="단지배치도" />
             </div>
             <div className="haustory-card fade-in">
               <div className="haustory-logo-wrap">
@@ -157,7 +157,7 @@ export default function ComplexPage() {
             <LegendCard />
             <div className="image-card fade-in-scale">
               <div className="image-card-caption">
-                <img src="https://framerusercontent.com/images/aYD4ehlww2bSdogTdjK1kQGq6Y.png" alt="동호수 배치표" />
+                <img src="/images/danji-layout.png" alt="단지배치도" />
                 <div className="caption-overlay">
                   <span className="caption-badge">
                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 256 256" fill="currentColor"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm-4,48a12,12,0,1,1-12,12A12,12,0,0,1,124,72Zm12,112a16,16,0,0,1-16-16V128a8,8,0,0,1,0-16,16,16,0,0,1,16,16v40a8,8,0,0,1,0,16Z"/></svg>
