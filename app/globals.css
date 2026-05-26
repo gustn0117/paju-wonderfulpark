@@ -1636,11 +1636,13 @@ a {
   background: #000;
 }
 
-.video-embed-wrapper iframe {
+.video-embed-wrapper iframe,
+.video-embed-wrapper video {
   width: 100%;
   aspect-ratio: 16 / 9;
   display: block;
   border: none;
+  background: #000;
 }
 
 .video-meta {

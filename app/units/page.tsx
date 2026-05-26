@@ -56,10 +56,10 @@ const unitData = [
     id: '77a',
     title: '77A 타입 안내',
     badge: '77A',
-    hasVideo: false,
-    videoUrl: undefined,
-    videoTitle: undefined,
-    videoDesc: undefined,
+    hasVideo: true,
+    videoUrl: '/videos/77A.mp4',
+    videoTitle: '77A type',
+    videoDesc: '파주 원더풀 파크 남광 하우스토리',
     specs: [
       { label: '유형', value: '77m²A' },
       { label: '세대수', value: '322세대' },
@@ -222,12 +222,21 @@ export default function UnitsPage() {
             <div className="video-specs-row">
               <div className="fade-in">
                 <div className="video-embed-wrapper">
-                  <iframe
-                    src={unit.videoUrl}
-                    title={unit.videoTitle}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen
-                  ></iframe>
+                  {unit.videoUrl?.startsWith('/') ? (
+                    <video
+                      src={unit.videoUrl}
+                      controls
+                      playsInline
+                      preload="metadata"
+                    />
+                  ) : (
+                    <iframe
+                      src={unit.videoUrl}
+                      title={unit.videoTitle}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullScreen
+                    ></iframe>
+                  )}
                   <div className="video-meta">
                     <h3>{unit.videoTitle}</h3>
                     <p>{unit.videoDesc}</p>
